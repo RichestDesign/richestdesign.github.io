@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richest Design</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tailwindcss/tailwind.min.css" />
+    <script>
+      /*
+      // Request fullscreen
+      function requestFullscreen(element) {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+          // Firefox
+          element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+          // Chrome, Safari, Opera
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+          // IE/Edge
+          element.msRequestFullscreen();
+        }
+      }
+
+      // Automatically request fullscreen when the page loads
+      window.onload = function () {
+        var body = document.documentElement || document.body;
+        requestFullscreen(body);
+      };
+
+      // Register a Service Worker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(function (registration) {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch(function (error) {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      } */
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <!-- Nav-Brand & Nav-Item Start-->
+          <div class="flex space-x-4">
+            <!-- Nav-Brand Start -->
+            <div>
+              <a
+                href="#"
+                class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+              >
+                <img class="h-8" src="img/logord.png" />
+                <span class="px-4 font-designer font-bold text-2xl"
+                  >Richest Design Legacy</span
+                >
+              </a>
+            </div>
+            <!-- Nav-Brand End -->
+
+            <!-- Nav-Item Start -->
+            <div
+              class="hidden md:flex items-center space-x-1 text-lg block text-center"
+            >
+              <a
+                href="index.html"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Products</a
+              >
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Testimonials</a
+              >
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Contact Us</a
+              >
+            </div>
+            <!-- Nav-Item Start -->
+          </div>
+          <!-- Nav-Brand & Nav-Item End-->
+
+          <!-- Contact-Nav Start -->
+          <div class="hidden md:flex items-center space-x-1 text-lg">
+            <a
+              href="https://wa.me/60177230796"
+              target="_blank"
+              class="flex flex-row block items-center py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+              ><svg viewBox="0 0 32 32" class="whatsapp-ico mr-2">
+                <path
+                  d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+              Call Us Now</a
+            >
+            <div class="relative">
+              <button
+                id="dropdownButton"
+                class="py-2 px-4 bg-green-400 hover:bg-green-300 text-green-900 hover:text-green-800 rounded transition duration-300"
+              >
+                <span class="mr-1">Get Direction</span>
+              </button>
+              <div
+                id="dropdownContainer"
+                class="absolute hidden text-gray-700 bg-white rounded shadow-md"
+              >
+                <a
+                  href="https://goo.gl/maps/Dc6m41ACxvLPMr347"
+                  target="_blank"
+                  class="block px-4 py-2 hover:bg-gray-200"
+                  >Taman Kota Masai</a
+                >
+                <a
+                  href="https://goo.gl/maps/C18C6UvjYGjFLHVq6"
+                  target="_blank"
+                  class="block px-4 py-2 hover:bg-gray-200"
+                  >Taman Pasir Putih</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Contact-Nav End -->
+
+          <!-- Hamburger Menu Button Start -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Hamburger Menu Button End -->
+        </div>
+      </div>
+      <!-- Nav-Item Mobile Start -->
+      <div class="mobile-menu hidden md:hidden font-bold text-lg">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Products</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Testimonials</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Contact Us</a>
+      </div>
+      <!-- Nav-Item Mobile End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="flex-1 overflow-y-auto px-4 py-16 space-y-16 mb-8 md:mb-0">
+      <div class="text-center">
+        <h2 class="hidden md:inline-block text-gray-700 inline-block text-4xl">
+          OUR PRODUCTS
+        </h2>
+
+        <h2 class="md:hidden text-gray-700 inline-block text-4xl">
+          OUR <br /><br />
+          PRODUCTS
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="mx-auto">
+          <a href="bunting.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-bunting hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+        <div class="mx-auto">
+          <a href="banner.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-banner hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+        <div class="mx-auto">
+          <a href="signboard.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-signboard hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+        <div class="mx-auto">
+          <a href="signage.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-signage hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+        <div class="mx-auto">
+          <a href="phcanvas.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-phcanvas hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+        <div class="mx-auto">
+          <a href="sticker.html">
+            <div
+              class="w-80 h-80 rounded-lg bg-sticker hover:scale-110 transform transition-transform duration-300"
+            ></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="fixed bottom-0 inset-x-0 h-16 px-4 py-2 md:hidden justify-between items-center bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+    >
+      <div class="flex justify-center items-center h-full">
+        <svg viewBox="0 0 32 32" class="whatsapp-ico mr-2">
+          <path
+            d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+        <a href="https://wa.me/60177230796" target="_blank" class="text-2xl"
+          >Call Us Now</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      // add event listeners
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      var dropdownButton = document.getElementById("dropdownButton");
+      var dropdownContainer = document.getElementById("dropdownContainer");
+
+      dropdownButton.addEventListener("click", function () {
+        dropdownContainer.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          !dropdownButton.contains(event.target) &&
+          !dropdownContainer.contains(event.target)
+        ) {
+          dropdownContainer.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

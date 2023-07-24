@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richest Design</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tailwindcss/tailwind.min.css" />
+    <script>
+      /*
+      // Request fullscreen
+      function requestFullscreen(element) {
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+          // Firefox
+          element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+          // Chrome, Safari, Opera
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+          // IE/Edge
+          element.msRequestFullscreen();
+        }
+      }
+
+      // Automatically request fullscreen when the page loads
+      window.onload = function () {
+        var body = document.documentElement || document.body;
+        requestFullscreen(body);
+      };
+
+      // Register a Service Worker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(function (registration) {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch(function (error) {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      } */
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <!-- Nav-Brand & Nav-Item Start-->
+          <div class="flex space-x-4">
+            <!-- Nav-Brand Start -->
+            <div>
+              <a
+                href="#"
+                class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+              >
+                <img class="h-8" src="img/logord.png" />
+                <span class="px-4 font-designer font-bold text-2xl"
+                  >Richest Design Legacy</span
+                >
+              </a>
+            </div>
+            <!-- Nav-Brand End -->
+
+            <!-- Nav-Item Start -->
+            <div
+              class="hidden md:flex items-center space-x-1 text-lg block text-center"
+            >
+              <a
+                href="index.html"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Products</a
+              >
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Testimonials</a
+              >
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Contact Us</a
+              >
+            </div>
+            <!-- Nav-Item Start -->
+          </div>
+          <!-- Nav-Brand & Nav-Item End-->
+
+          <!-- Contact-Nav Start -->
+          <div class="hidden md:flex items-center space-x-1 text-lg">
+            <a
+              href="https://wa.me/60177230796"
+              target="_blank"
+              class="block text-center py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+              >Call Us Now</a
+            >
+            <div class="relative">
+              <button
+                id="dropdownButton"
+                class="py-2 px-4 bg-green-400 hover:bg-green-300 text-green-900 hover:text-green-800 rounded transition duration-300"
+              >
+                <span class="mr-1">Get Direction</span>
+              </button>
+              <div
+                id="dropdownContainer"
+                class="absolute hidden text-gray-700 bg-white rounded shadow-md"
+              >
+                <a
+                  href="https://goo.gl/maps/Dc6m41ACxvLPMr347"
+                  target="_blank"
+                  class="block px-4 py-2 hover:bg-gray-200"
+                  >Taman Kota Masai</a
+                >
+                <a
+                  href="https://goo.gl/maps/C18C6UvjYGjFLHVq6"
+                  target="_blank"
+                  class="block px-4 py-2 hover:bg-gray-200"
+                  >Taman Pasir Putih</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Contact-Nav End -->
+
+          <!-- Hamburger Menu Button Start -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Hamburger Menu Button End -->
+        </div>
+      </div>
+      <!-- Nav-Item Mobile Start -->
+      <div class="mobile-menu hidden md:hidden font-bold text-lg">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Products</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Testimonials</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Contact Us</a>
+      </div>
+      <!-- Nav-Item Mobile End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="flex-1 overflow-y-auto">
+      <div class="">
+        <div class="text-center">
+          <h2
+            class="w-full h-full p-8 bg-yellow-500 text-gray-700 inline-block text-3xl md:text-4xl"
+          >
+            BUNTING
+          </h2>
+        </div>
+        <div class="container mx-auto p-4 py-8 md:px-12 lg:px-60">
+          <div class="grid grid-cols-2 text-center">
+            <!-- Types -->
+            <div
+              class="col-span-1 p-2 font-bold border border-black text-white bg-blue-500"
+            >
+              SIZE (FT/SQUARE)
+            </div>
+            <div
+              class="col-span-1 p-2 font-bold border border-black text-white bg-red-500"
+            >
+              PRICE (RM)
+            </div>
+            <!-- Prices -->
+            <div class="col-span-1 p-2 border border-black">
+              2' X 1' (MIN ORDER 2PCS)
+            </div>
+            <div class="col-span-1 p-2 border border-black">15.00</div>
+            <div class="col-span-1 p-2 border border-black">2' X 2'</div>
+            <div class="col-span-1 p-2 border border-black">25.00</div>
+            <div class="col-span-1 p-2 border border-black">2' X 3'</div>
+            <div class="col-span-1 p-2 border border-black">30.00</div>
+            <div class="col-span-1 p-2 border border-black">2' X 4'</div>
+            <div class="col-span-1 p-2 border border-black">35.00</div>
+            <div class="col-span-1 p-2 border border-black">2' X 5'</div>
+            <div class="col-span-1 p-2 border border-black">40.00</div>
+            <div class="col-span-1 p-2 border border-black">2' X 6'</div>
+            <div class="col-span-1 p-2 border border-black">45.00</div>
+            <div class="col-span-1 p-2 border border-black">3' X 5'</div>
+            <div class="col-span-1 p-2 border border-black">55.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mb-6">
+        <a
+          href="https://www.example.com"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-10 rounded"
+          >Order Now</a
+        >
+      </div>
+      <div class="w-screen">
+        <img
+          src="/img/bunting-guide.jpg"
+          class="w-full h-auto"
+          alt="Poster Bunting"
+        />
+      </div>
+      <div class="w-screen">
+        <img
+          src="/img/poster-bunting.jpg"
+          class="w-full h-auto"
+          alt="Poster Bunting"
+        />
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      // add event listeners
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      var dropdownButton = document.getElementById("dropdownButton");
+      var dropdownContainer = document.getElementById("dropdownContainer");
+
+      dropdownButton.addEventListener("click", function () {
+        dropdownContainer.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          !dropdownButton.contains(event.target) &&
+          !dropdownContainer.contains(event.target)
+        ) {
+          dropdownContainer.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
