@@ -14,6 +14,8 @@ const urlsToCache = [
   "fonts/DESIGNER.otf",
   "css/styles.css",
   "css/tailwindcss/tailwind.min.css",
+  "css/swiper.css",
+  "js/swiper.js",
 ];
 
 // Install service worker and cache the static assets
