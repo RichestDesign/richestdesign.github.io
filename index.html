@@ -2,35 +2,24 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richest Design</title>
+    <title>Richest Design Legacy</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/tailwindcss/tailwind.min.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <script src="js/swiper.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    />
+    <script src="js/embed.min.js"></script>
     <script>
       /*
-      // Request fullscreen
-      function requestFullscreen(element) {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if (element.mozRequestFullScreen) {
-          // Firefox
-          element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullscreen) {
-          // Chrome, Safari, Opera
-          element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) {
-          // IE/Edge
-          element.msRequestFullscreen();
-        }
-      }
-
-      // Automatically request fullscreen when the page loads
-      window.onload = function () {
-        var body = document.documentElement || document.body;
-        requestFullscreen(body);
-      };
-
       // Register a Service Worker
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
@@ -46,7 +35,7 @@
               console.log("Service Worker registration failed:", error);
             });
         });
-      } */
+      }*/
     </script>
   </head>
   <body class="bg-gray-100">
@@ -75,15 +64,19 @@
               class="hidden md:flex items-center space-x-1 text-lg block text-center"
             >
               <a
-                href="products.html"
+                href="#product"
                 class="py-5 px-3 text-gray-700 hover:text-gray-900"
                 >Products</a
               >
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+              <a
+                href="#testimonials"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
                 >Testimonials</a
               >
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >Contact Us</a
+              <a
+                href="#contact"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Contact</a
               >
             </div>
             <!-- Nav-Item Start -->
@@ -103,7 +96,7 @@
                   fill-rule="evenodd"
                 ></path>
               </svg>
-              Call Us Now</a
+              +60 17-723 0796</a
             >
             <div class="relative">
               <button
@@ -119,7 +112,7 @@
                   >
                     <style>
                       svg {
-                        fill: #ffae00;
+                        fill: #00a81c;
                       }
                     </style>
                     <path
@@ -173,56 +166,276 @@
         </div>
       </div>
       <!-- Nav-Item Mobile Start -->
-      <div class="mobile-menu hidden md:hidden font-bold text-lg">
-        <a href="products.html" class="block py-2 px-4 hover:bg-gray-200"
+      <div class="mobile-menu hidden md:hidden font-inter-regular text-lg">
+        <a href="#product" class="block py-2 px-4 hover:bg-gray-200"
           >Products</a
         >
-        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Testimonials</a>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Contact Us</a>
+        <a href="#testimonials" class="block py-2 px-4 hover:bg-gray-200"
+          >Testimonials</a
+        >
+        <a href="#contact" class="block py-2 px-4 hover:bg-gray-200">Contact</a>
       </div>
       <!-- Nav-Item Mobile End -->
     </nav>
     <!-- Navbar End -->
 
     <!-- Main Content -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="/img/poster-bunting.jpg" alt="Poster Bunting" />
-        </div>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="/img/carousel1.jpg" />
+          </li>
+          <li class="splide__slide">
+            <img src="/img/carousel1.jpg" />
+          </li>
+        </ul>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="text-center">
-      <h2
-        class="w-full h-full p-4 bg-blue-500 text-indigo-900 inline-block text-2xl md:text-2xl"
-      >
-        CONTACT
-      </h2>
-    </div>
-    <div
-      class="flex justify-center w-full h-full p-4 bg-blue-300 text-indigo-900"
-    >
-      <div class="text-left">
-        <h2 class="font-sans font-bold text-2xl"></h2>
+
+      <!-- Add the progress bar element -->
+      <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
       </div>
     </div>
 
-    <footer
-      class="fixed bottom-0 inset-x-0 h-16 px-4 py-2 md:hidden justify-between items-center bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
-    >
-      <div class="flex justify-center items-center h-full">
-        <svg viewBox="0 0 32 32" class="whatsapp-ico mr-2">
-          <path
-            d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
-            fill-rule="evenodd"
-          ></path>
-        </svg>
-        <a href="https://wa.me/60177230796" target="_blank" class="text-2xl"
-          >Call Us Now</a
-        >
+    <div id="product" class="py-12 px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <a href="bunting.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/bunting.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="banner.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/banner.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="signboard.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/signboard.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="signage.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/signage.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="phcanvas.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/phcanvas.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="sticker.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/sticker.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="flyers.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/flyers.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="brochure.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/brochure.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="namecard.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/namecard.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="wdcard.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/wdcard.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="t-shirt.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/t-shirt.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="apron.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/apron.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="rubber-stamp.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/rubber-stamp.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="receipt-book.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/receipt-book.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="btn-badge.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/btn-badge.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="fridge-magnet.html">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg shadow-2xl"
+              src="/img/fridge-magnet.jpg"
+              alt=""
+            />
+          </div>
+        </a>
       </div>
-    </footer>
+    </div>
+
+    <div id="testimonials" class="mt-10">
+      <div class="text-center">
+        <h2 class="inline-block text-4xl">TESTIMONIALS</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-12 px-8 lg:px-44">
+        <div>
+          <img class="h-14 w-14" src="/img/rosehmawati.png" alt="" />
+          <strong>Rosemahwati</strong> - ⭐️⭐️⭐️⭐️⭐️
+          <p>Layanan memuaskan hati..staff yg peramah</p>
+        </div>
+        <div>
+          <img class="h-14 w-14" src="/img/roziana.png" alt="" />
+          <strong>Che Engku Roziana</strong> - ⭐️⭐️⭐️⭐️⭐️
+          <p>
+            tempat printing... staff friendly... byk produk printing yg boleh
+            ditempah
+          </p>
+        </div>
+        <div>
+          <img class="h-14 w-14" src="/img/amir.png" alt="" />
+          <strong>Amir Hazim</strong> - ⭐️⭐️⭐️⭐️⭐️
+          <p>Perkhidmatan perkhidmatan terbaik.. sangat mengesyorkan</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="pt-4 pb-4 bg-yellow-400">
+      <div class="text-center">
+        <h2 class="inline-block text-4xl border-b-4 border-black">Contact</h2>
+      </div>
+      <div class="py-8 px-8 lg:px-44">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="border-r-0 md:border-r-2 border-black px-4">
+            <h2>Contact</h2>
+            <p>+60 17-723 0796</p>
+          </div>
+          <div class="border-r-0 md:border-r-2 border-black px-4">
+            <h2>Address</h2>
+            <p>
+              No.1, Jalan Selasih, Taman Pasir Putih, 81700 Pasir Gudang, Johor
+            </p>
+          </div>
+          <div class="border-r-0 md:border-r-2 border-black px-4">
+            <h2>Business Hours</h2>
+            <p>
+              Mon: 9:00 AM – 6:00 PM <br />Tue: 9:00 AM – 6:00 PM <br />Wed:
+              9:00 AM – 6:00 PM <br />Thu: 9:00 AM – 6:00 PM <br />Fri:
+              9:00 AM – 6:00 PM <br />
+              Sat: 9:00 AM – 1:00 PM <br />Sun: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-8">
+        <h2 class="inline-block text-4xl border-b-4 border-black">Location</h2>
+      </div>
+      <div class="">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="relative w-full md:w-4/5 h-96 flex justify-center mx-auto mb-16"
+          >
+            <h2>Taman Pasir Putih</h2>
+            <iframe
+              class="absolute top-10 w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5100128990434!2d103.94179087576889!3d1.4673301611853204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3fac7f03ac37%3A0x279d5cf71e60cbb8!2sRICHEST%20DESIGN%20LEGACY%20SDN.%20BHD!5e0!3m2!1sms!2smy!4v1691296336269!5m2!1sms!2smy"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+          <div class="relative w-full md:w-4/5 h-96 flex justify-center mb-16">
+            <h2>Taman Kota Masai</h2>
+            <iframe
+              class="absolute top-10 w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1209160472945!2d103.9544971!3d1.482033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da407b8c57200b%3A0xe4fe35a3c21dcd1!2s46a%2C%20Jalan%20Tembikai%208%2C%20Taman%20Kota%20Masai%2C%2081700%20Pasir%20Gudang%2C%20Johor!5e0!3m2!1sms!2smy!4v1691296420263!5m2!1sms!2smy"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       const btn = document.querySelector("button.mobile-menu-button");
@@ -249,6 +462,52 @@
           dropdownContainer.classList.add("hidden");
         }
       });
+    </script>
+    <script>
+      var splide = new Splide(".splide");
+      var bar = splide.root.querySelector(".my-carousel-progress-bar");
+
+      // Updates the bar width whenever the carousel moves:
+      splide.on("mounted move", function () {
+        var end = splide.Components.Controller.getEnd() + 1;
+        var rate = Math.min((splide.index + 1) / end, 1);
+        bar.style.width = String(100 * rate) + "%";
+      });
+
+      splide.mount();
+    </script>
+    <script>
+      var wa_btnSetting = {
+        btnColor: "#16BE45",
+        ctaText: "WhatsApp Us",
+        cornerRadius: 40,
+        marginBottom: 20,
+        marginLeft: 20,
+        marginRight: 20,
+        btnPosition: "right",
+        whatsAppNumber: "60177230796",
+        welcomeMessage: "Hello",
+        zIndex: "50",
+        btnColorScheme: "light",
+      };
+      var wa_widgetSetting = {
+        title: "Richest Design Legacy",
+        subTitle: "",
+        headerBackgroundColor: "#16BE45",
+        headerColorScheme: "light",
+        greetingText:
+          'Tekan butang "Start Chat" untuk pertanyaan atau pembelian.',
+        ctaText: "Start Chat",
+        btnColor: "#16BE45",
+        cornerRadius: 40,
+        welcomeMessage: "Hello",
+        btnColorScheme: "light",
+        brandImage: "/img/logord.png",
+        darkHeaderColorScheme: { title: "#333333", subTitle: "#4F4F4F" },
+      };
+      window.onload = () => {
+        _waEmbed(wa_btnSetting, wa_widgetSetting);
+      };
     </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 const CACHE_NAME = "rd-service-worker";
 const urlsToCache = [
-  "/",
+  "/", // Add your other static assets here
   "index.html",
   "img/logord.png",
   "img/bg.jpg",
@@ -13,12 +13,12 @@ const urlsToCache = [
   "fonts/DeepShadow.ttf",
   "fonts/DESIGNER.otf",
   "css/styles.css",
-  "css/tailwindcss/tailwind.min.css",
-  "css/swiper.css",
-  "js/swiper.js",
+  "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css",
+  "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css",
+  "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js",
 ];
 
-// Install service worker and cache the static assets
+// Install service worker and cache the static assets and CDN files
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
