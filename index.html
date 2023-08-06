@@ -48,7 +48,7 @@
             <!-- Nav-Brand Start -->
             <div>
               <a
-                href="#"
+                href="index.html"
                 class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
               >
                 <img class="h-8" src="img/logord.png" />
@@ -373,20 +373,40 @@
       </div>
     </div>
 
-    <div id="contact" class="pt-4 pb-4 bg-yellow-400">
+    <div id="contact" class="pt-4 pb-4 bg-yellow-400 text-yellow-900">
       <div class="text-center">
-        <h2 class="inline-block text-4xl border-b-4 border-black">Contact</h2>
+        <h2 class="inline-block text-4xl border-b-4 border-yellow-900">
+          CONTACT
+        </h2>
       </div>
       <div class="py-8 px-8 lg:px-44">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="border-r-0 md:border-r-2 border-black px-4">
+          <div class="border-r-0 md:border-r-2 border-yellow-900 px-4">
             <h2>Contact</h2>
-            <p>+60 17-723 0796</p>
+            <a
+              href="https://wa.me/60177230796"
+              target="_blank"
+              class="flex flex-row items-center block text-center py-2 px-3 bg-yellow-300"
+            >
+              <svg viewBox="0 0 32 32" class="h-7 w-7 whatsapp-ico mr-2">
+                <path
+                  d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+              +60 17-723 0796</a
+            >
           </div>
-          <div class="border-r-0 md:border-r-2 border-black px-4">
+          <div class="border-r-0 md:border-r-2 border-yellow-900 px-4">
             <h2>Address</h2>
-            <p>
+            <p class="mb-2">
+              <strong>Taman Pasir Putih</strong><br />
               No.1, Jalan Selasih, Taman Pasir Putih, 81700 Pasir Gudang, Johor
+            </p>
+            <p>
+              <strong>Taman Kota Masai</strong><br />
+              No. 46a, Jalan Tembikai 8, Taman Kota Masai, 81700 Pasir Gudang,
+              Johor
             </p>
           </div>
           <div class="border-r-0 md:border-r-2 border-black px-4">
@@ -401,7 +421,9 @@
         </div>
       </div>
       <div class="text-center mb-8">
-        <h2 class="inline-block text-4xl border-b-4 border-black">Location</h2>
+        <h2 class="inline-block text-4xl border-b-4 border-yellow-900">
+          LOCATION
+        </h2>
       </div>
       <div class="">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -464,7 +486,11 @@
       });
     </script>
     <script>
-      var splide = new Splide(".splide");
+      var splide = new Splide(".splide", {
+        autoplay: true,
+        autoplayInterval: 3000,
+        type: "loop",
+      });
       var bar = splide.root.querySelector(".my-carousel-progress-bar");
 
       // Updates the bar width whenever the carousel moves:

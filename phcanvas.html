@@ -2,35 +2,24 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richest Design - Photocanvas</title>
+    <title>Richest Design Legacy - Photocanvas</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/tailwindcss/tailwind.min.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <script src="js/swiper.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    />
+    <script src="js/embed.min.js"></script>
     <script>
       /*
-      // Request fullscreen
-      function requestFullscreen(element) {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if (element.mozRequestFullScreen) {
-          // Firefox
-          element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullscreen) {
-          // Chrome, Safari, Opera
-          element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) {
-          // IE/Edge
-          element.msRequestFullscreen();
-        }
-      }
-
-      // Automatically request fullscreen when the page loads
-      window.onload = function () {
-        var body = document.documentElement || document.body;
-        requestFullscreen(body);
-      };
-
       // Register a Service Worker
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
@@ -46,7 +35,7 @@
               console.log("Service Worker registration failed:", error);
             });
         });
-      } */
+      }*/
     </script>
   </head>
   <body class="bg-gray-100">
@@ -59,7 +48,7 @@
             <!-- Nav-Brand Start -->
             <div>
               <a
-                href="#"
+                href="index.html"
                 class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
               >
                 <img class="h-8" src="img/logord.png" />
@@ -75,15 +64,19 @@
               class="hidden md:flex items-center space-x-1 text-lg block text-center"
             >
               <a
-                href="products.html"
+                href="index.html#product"
                 class="py-5 px-3 text-gray-700 hover:text-gray-900"
                 >Products</a
               >
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+              <a
+                href="index.html#testimonials"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
                 >Testimonials</a
               >
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >Contact Us</a
+              <a
+                href="index.html#contact"
+                class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                >Contact</a
               >
             </div>
             <!-- Nav-Item Start -->
@@ -103,7 +96,7 @@
                   fill-rule="evenodd"
                 ></path>
               </svg>
-              Call Us Now</a
+              +60 17-723 0796</a
             >
             <div class="relative">
               <button
@@ -119,7 +112,7 @@
                   >
                     <style>
                       svg {
-                        fill: #ffae00;
+                        fill: #00a81c;
                       }
                     </style>
                     <path
@@ -149,6 +142,7 @@
             </div>
           </div>
           <!-- Contact-Nav End -->
+
           <!-- Hamburger Menu Button Start -->
           <div class="md:hidden flex items-center">
             <button class="mobile-menu-button">
@@ -172,12 +166,18 @@
         </div>
       </div>
       <!-- Nav-Item Mobile Start -->
-      <div class="mobile-menu hidden md:hidden font-bold text-lg">
-        <a href="products.html" class="block py-2 px-4 hover:bg-gray-200"
+      <div class="mobile-menu hidden md:hidden font-inter-regular text-lg">
+        <a href="index.html#product" class="block py-2 px-4 hover:bg-gray-200"
           >Products</a
         >
-        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Testimonials</a>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-200">Contact Us</a>
+        <a
+          href="index.html#testimonials"
+          class="block py-2 px-4 hover:bg-gray-200"
+          >Testimonials</a
+        >
+        <a href="index.html#contact" class="block py-2 px-4 hover:bg-gray-200"
+          >Contact</a
+        >
       </div>
       <!-- Nav-Item Mobile End -->
     </nav>
