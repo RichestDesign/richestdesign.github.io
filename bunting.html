@@ -184,16 +184,19 @@
     <!-- Navbar End -->
 
     <!-- Main Content -->
-    <div class="flex-1 overflow-y-auto">
-      <div class="">
-        <div class="text-center">
+    <div class="flex-1 overflow-y-auto mb-20">
+      <div class="px-8 md:px-32">
+        <div class="text-left">
           <h2
-            class="w-full h-full p-8 bg-yellow-500 text-gray-700 inline-block text-3xl md:text-4xl"
+            class="w-full h-full p-4 bg-yellow-500 text-gray-700 inline-block text-3xl md:text-4xl"
           >
             BUNTING
           </h2>
         </div>
-        <div class="container mx-auto p-4 py-8 md:px-12 lg:px-60">
+        <div class="grid grid-cols-1 md:grid-cols-2 p-8">
+          <div class="p-4">
+            <img class="shadow-2xl" src="/img/bunting.jpg" />
+          </div>
           <div class="grid grid-cols-2 text-center font-bold">
             <!-- Types -->
             <div
@@ -247,16 +250,19 @@
           Order Now</a
         >
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/img/bunting-guide.jpg" alt="Image 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/poster-bunting.jpg" alt="Image 2" />
-          </div>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/img/bunting-guide.jpg" />
+            </li>
+          </ul>
         </div>
-        <div class="swiper-pagination"></div>
+
+        <!-- Add the progress bar element -->
+        <div class="my-slider-progress">
+          <div class="my-slider-progress-bar"></div>
+        </div>
       </div>
     </div>
 
