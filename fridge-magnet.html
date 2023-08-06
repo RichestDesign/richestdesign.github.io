@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richest Design Legacy - Fridge Magnet</title>
+    <title>Richest Design Legacy - Fridge</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -315,12 +315,54 @@
       });
     </script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
+      var splide = new Splide(".splide", {
+        autoplay: true,
+        autoplayInterval: 3000,
+        type: "loop",
       });
+      var bar = splide.root.querySelector(".my-carousel-progress-bar");
+
+      // Updates the bar width whenever the carousel moves:
+      splide.on("mounted move", function () {
+        var end = splide.Components.Controller.getEnd() + 1;
+        var rate = Math.min((splide.index + 1) / end, 1);
+        bar.style.width = String(100 * rate) + "%";
+      });
+
+      splide.mount();
+    </script>
+    <script>
+      var wa_btnSetting = {
+        btnColor: "#16BE45",
+        ctaText: "WhatsApp Us",
+        cornerRadius: 40,
+        marginBottom: 20,
+        marginLeft: 20,
+        marginRight: 20,
+        btnPosition: "right",
+        whatsAppNumber: "60177230796",
+        welcomeMessage: "Hello",
+        zIndex: "50",
+        btnColorScheme: "light",
+      };
+      var wa_widgetSetting = {
+        title: "Richest Design Legacy",
+        subTitle: "",
+        headerBackgroundColor: "#16BE45",
+        headerColorScheme: "light",
+        greetingText:
+          'Tekan butang "Start Chat" untuk pertanyaan atau pembelian.',
+        ctaText: "Start Chat",
+        btnColor: "#16BE45",
+        cornerRadius: 40,
+        welcomeMessage: "Hello",
+        btnColorScheme: "light",
+        brandImage: "/img/logord.png",
+        darkHeaderColorScheme: { title: "#333333", subTitle: "#4F4F4F" },
+      };
+      window.onload = () => {
+        _waEmbed(wa_btnSetting, wa_widgetSetting);
+      };
     </script>
   </body>
 </html>
