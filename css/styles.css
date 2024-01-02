@@ -84,27 +84,6 @@ a {
   font-family: "inter-bold";
 }
 
-.whatsapp-ico {
-  fill: white;
-  width: 40px;
-  height: 40px;
-  padding: 3px;
-  background-color: #4dc247;
-  border-radius: 50%;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.my-slider-progress {
-  background: #ccc;
-}
-
-.my-slider-progress-bar {
-  background: greenyellow;
-  height: 2px;
-  transition: width 400ms ease;
-  width: 0;
-}
-
 /* Background Div */
 .bg-bunting {
   background-image: url("/img/bunting.jpg");
@@ -200,4 +179,27 @@ a {
   background-image: url("/img/fridge-magnet.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/* Whatsapp icon */
+
+.whatsapp-ico {
+  fill: white;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  background-color: #4dc247;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.my-slider-progress {
+  background: #ccc;
+}
+
+.my-slider-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
 }
